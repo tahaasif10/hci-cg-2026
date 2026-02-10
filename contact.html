@@ -1,61 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Character encoding for consistent text rendering -->
   <meta charset="UTF-8">
-
-  <!-- Page title shown in browser tab and announced by screen readers -->
-  <title>Don Norman – Contact</title>
+  <title>Contact – HCI Lab 01</title>
+  
+  <style>
+    /* Allowed CSS: color, background-color, font-family, font-size */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: #ffffff;
+    }
+    nav ul {
+      background-color: #ecf0f1;
+    }
+    legend {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #2c3e50;
+    }
+    footer {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Page header: identifies the page purpose -->
   <header>
     <h1>Contact</h1>
+    <p>Human-Computer Interaction &amp; Computer Graphics Lab</p>
   </header>
 
-  <!-- Primary navigation: identical structure across all pages -->
   <nav aria-label="Primary navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="cv.html">CV</a></li>
-
-      <!-- Current page is indicated using aria-current -->
       <li><a href="contact.html" aria-current="page">Contact</a></li>
-
       <li><a href="analysis.html">Interaction Analysis</a></li>
       <li><a href="norman2klm.html">Norman–GOMS–KLM</a></li>
       <li><a href="assignment01.html">Lab 01 Rules</a></li>
-
     </ul>
   </nav>
 
-  <!-- Main landmark: primary content of this page -->
   <main>
-    <form action="#" method="post">
-      
-      <!-- Groups related form controls and provides context -->
-      <fieldset>
-        <legend>Send a Message</legend>
+    <section>
+      <h2>Get in Touch</h2>
+      <p>Use the form below to inquire about HCI models (Norman, GOMS, KLM) or laboratory practices.</p>
 
-        <!-- Label explicitly associated with its input -->
-        <label for="subject">Subject</label><br>
-        <input type="text" id="subject" name="subject"><br><br>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Send a Message</legend>
 
-        <!-- Textarea with clear label for screen readers -->
-        <label for="message">Message</label><br>
-        <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+          <p>
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" placeholder="e.g., GOMS Selection Rules">
+          </p>
 
-        <!-- Submit button is keyboard accessible by default -->
-        <button type="submit">Send</button>
-      </fieldset>
+          <p>
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="40"></textarea>
+          </p>
 
-    </form>
+          <button type="submit">Send Message</button>
+        </fieldset>
+      </form>
+    </section>
   </main>
 
-  <!-- Footer provides supplementary information -->
   <footer>
-    <p>Keyboard accessible form with screen-reader friendly labels.</p>
+    <hr>
+    <p><strong>Accessibility Note:</strong> This form uses explicit labels and fieldsets to assist screen reader users navigating the Gulf of Evaluation.</p>
+    <p><a href="index.html">Back to Home</a></p>
   </footer>
 
 </body>

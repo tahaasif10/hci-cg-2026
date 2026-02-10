@@ -1,63 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Character encoding for proper text rendering -->
   <meta charset="UTF-8">
+  <title>Don Norman – Home | HCI &amp; CG Lab</title>
 
-  <!-- Page title shown in browser tab and screen readers -->
-  <title>Don Norman – Home</title>
+  <style>
+    /* Strictly following Lab 01 CSS rules: only colors and fonts */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: #ffffff;
+    }
+    nav ul {
+      background-color: #ecf0f1;
+    }
+    h2 {
+      color: #2c3e50;
+      background-color: #dcdde1; /* Highlighting section headers within CSS rules */
+    }
+    footer {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Page header: identifies the site and its purpose -->
   <header>
     <h1>Don Norman</h1>
-    <p>Human–Computer Interaction Philosopher</p>
+    <p>Pioneer of Human–Computer Interaction &amp; User-Centered Design</p>
   </header>
 
-  <!-- Primary navigation landmark for keyboard and screen reader users -->
   <nav aria-label="Primary navigation">
     <ul>
-      <!-- Current page is indicated using aria-current -->
-      <li>
-        <a href="index.html" aria-current="page">Home</a>
-      </li>
-
-      <!-- Navigation links to other site sections -->
+      <li><a href="index.html" aria-current="page">Home</a></li>
       <li><a href="cv.html">CV</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="analysis.html">Interaction Analysis</a></li>
       <li><a href="norman2klm.html">Norman–GOMS–KLM</a></li>
       <li><a href="assignment01.html">Lab 01 Rules</a></li>
-
     </ul>
   </nav>
 
-  <!-- Main content landmark: unique content of this page -->
   <main>
     <section>
-      <!-- Section heading establishes content hierarchy -->
       <h2>Biography</h2>
 
-      <!-- Informative image with alternative text for accessibility -->
-      <img src="norman.jpg" alt="Portrait of Don Norman">
+      <img src="norman.jpg" alt="Portrait of Don Norman, author of The Design of Everyday Things">
 
-      <p>
-        Don Norman is a pioneer in the field of Human–Computer Interaction,
-        known for his work on user-centered design, usability, and cognitive
-        engineering.
-      </p>
+      <article>
+        <p>
+          <strong>Don Norman</strong> is a pioneer in the field of <strong>Human–Computer Interaction (HCI)</strong>. 
+          He is best known for his book <em>The Design of Everyday Things</em>, where he introduced 
+          concepts like affordances, signifiers, and the Action Cycle.
+        </p>
+        <p>
+          His work focuses on bridging the <strong>Gulf of Execution</strong> and the 
+          <strong>Gulf of Evaluation</strong>, ensuring that technology is designed with the user's 
+          psychology in mind.
+        </p>
+      </article>
     </section>
   </main>
 
-  <!-- Footer contains meta or supplementary information -->
   <footer>
-    <p>&copy; 2026 HCI–CG Course</p>
-  <p>
-    <a href="assignment01.html">Lab 01 Instructions</a> |
-    <a href="https://github.com/humeraaa/hci-cg-2026">Starter Code</a> |
-    <a href="https://humeraaa.github.io/hci-cg-2026/">Live Demo</a>
-  </p>
+    <hr>
+    <p>&copy; 2026 HCI–CG Course | University of Karachi (UBIT)</p>
+    <p>
+      <a href="assignment01.html">Lab 01 Instructions</a> | 
+      <a href="https://github.com/humeraaa/hci-cg-2026">Starter Code</a> | 
+      <a href="https://humeraaa.github.io/hci-cg-2026/">Live Demo</a>
+    </p>
   </footer>
 
 </body>
